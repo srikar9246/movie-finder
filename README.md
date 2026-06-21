@@ -25,8 +25,6 @@ npm install
 
 ### 4. Configure Environment Variables
 Create a `.env` file in the root of the project:
-```env
-```
 *(You can replace the API key above with your personal TMDB v3 API key if needed).*
 
 ### 5. Start Development Server

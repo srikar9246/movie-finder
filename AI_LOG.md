@@ -10,7 +10,12 @@
 ---
 
 ## Best Prompts
-- "Core Features Required: Browse, Search, Details, Favorites, States, Pagination with Next/Prev buttons — exactly 12 results per page, no infinite scroll, GitHub repo named movie-finder-srikar, AI_LOG.md file in root, Footer with exact text Built for Jeevan — Srikar"
+- **Prompt 1 (Assignment Spec & Core Rules)**:
+  "Core Features Required: Browse, Search, Details, Favorites, States, Pagination with Next/Prev buttons — exactly 12 results per page, no infinite scroll, GitHub repo named movie-finder-srikar, AI_LOG.md file in root, Footer with exact text Built for Jeevan — Srikar"
+- **Prompt 2 (Custom Pagination Algorithm)**:
+  "Implement a custom page mapping system to query the TMDB API. Since TMDB enforces exactly 20 items per page, write an algorithm that fetches two adjacent pages concurrently if the requested 12-item slice spans a TMDB page boundary, then slice exactly 12 items. Implement client-side pagination for the Favorites tab too."
+- **Prompt 3 (Mockup Cards Design & Styling)**:
+  "Refactor the movie card design to match the uploaded chalet mockup exactly. Place the movie backdrop as a full-card background cover, overlay a heavy dark vertical gradient mask, use a rounded-[2.2rem] border-radius, add translucent badges inside the overlay, and style a high-contrast white button at the bottom."
 
 ---
 

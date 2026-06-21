@@ -1,37 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# movie-finder-srikar
 
-## Getting Started
+A modern, highly interactive, and premium movie discovery application built using **Next.js 16.2.9**, **React 19**, **Tailwind CSS v4**, and **TypeScript**. Powered by the TMDB API.
 
-First, run the development server:
+---
 
+## 🚀 Getting Started
+
+### 1. Prerequisites
+Ensure you have [Node.js](https://nodejs.org) (v18.x or later) installed on your system.
+
+### 2. Clone the Repository
+Clone this repository to your local machine:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/srikar9246/movie-finder-srikar.git
+cd movie-finder-srikar
+```
+*(Note: Please ensure your remote repository name is set to `movie-finder-srikar` to satisfy the assignment requirements).*
+
+### 3. Install Dependencies
+Install all the project dependencies:
+```bash
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Configure Environment Variables
+Create a `.env` file in the root of the project:
+```env
+NEXT_PUBLIC_TMDB_API_KEY=407cab04712951afde383c86bf9e37ba
+```
+*(You can replace the API key above with your personal TMDB v3 API key if needed).*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 5. Start Development Server
+Run the local Next.js development server:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 6. Build for Production
+To create an optimized production build of the project:
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Core Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Browse**: Responsive grid displaying movie posters/backdrops, titles, release years, and average ratings.
+2. **Live Search**: Real-time debounced search by movie title as you type.
+3. **Details Modal**: Interactive backdrop-themed details modal showing the full overview, release date, and ratings.
+4. **Favorites Manager**: Save or remove movies to/from a favorites list. Persisted locally via `localStorage`.
+5. **Interactive UI States**: Loading animations (spinners), descriptive error alerts, and clean empty states for both tabs.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📋 Specific Assignment Requirements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Movie-Discover
+- **R1 (Pagination)**: Implemented Next/Prev pagination delivering exactly 12 results per page (with no infinite scroll) on both the Browse (TMDB API) and Favorites (local state) tabs.
+- **R2 (Project Naming)**: Project renamed to `movie-finder-srikar` (all lowercase) in the configurations.
+- **R3 (AI Log File)**: Created `AI_LOG.md` in the root folder containing the tools used, strongest prompts, and list of manual improvements.
+- **R4 (Footer text)**: Homepage footer displays the exact text: `Built for Jeevan — Srikar`.

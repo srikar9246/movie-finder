@@ -9,7 +9,7 @@ import { MovieDetailDialog } from '@/components/movie-detail-dialog';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
-const API_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY || '';
+const API_KEY = process.env.NEXT_PUBLIC_TMDB_API_KEY || '407cab04712951afde383c86bf9e37ba';
 const BASE_URL = 'https://api.tmdb.org/3';
 
 export default function HomePage() {

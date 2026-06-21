@@ -29,4 +29,6 @@
 7. **Mockup Search Bar Redesign**: Redesigned the search input block to match the mockup structure using a glassmorphic look (translucent `bg-white/10` background container with `backdrop-blur-md` and `border-white/10`, white input text with zinc-400 placeholder, and a high-contrast circular white search button).
 8. **Environment Variables Config**: Migrated the hardcoded TMDB API Key to read from `process.env.NEXT_PUBLIC_TMDB_API_KEY` with a fallback key, and configured the root `.env` file to securely define it.
 9. **Bypassed ISP TMDB Block**: Switched TMDB API host from `api.themoviedb.org` to `api.tmdb.org` to resolve connection timeouts and loading issues caused by ISP blocks in specific regions.
-10. **Removed Fallback API Key**: Removed the hardcoded fallback API Key string from the codebase to avoid exposing default API credentials in public repositories.
+10. **Removed Fallback API Key & Created .env.example**: Removed the default hardcoded API key string from `page.tsx` to strictly enforce environment variables, and created `.env.example` in the root folder to provide a setup template for reviewers.
+
+
